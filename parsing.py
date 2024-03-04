@@ -16,11 +16,11 @@ def parse():
                         help='Class of sequences')
     parser.add_argument('-k', '--kmer', default=6, type=int,
                         help='Number of k-mers to generate')
-    parser.add_argument('-m', '--method', default='all', choices=['knn', 'dt', 'svc', 'mnb', 'all'],
+    parser.add_argument('-m', '--method', default='all', choices=['knn', 'dt', 'svc', 'mlp', 'all'],
                         help='Method to use for classification')
     parser.add_argument('-s', '--show', action='store_true', default=True,
                         help='Show plots')   
-    parser.add_argument('-v', '--verbose', action='store_true', default=True,
+    parser.add_argument('-v', '--verbose', action='store_true',
                         help='adds verbosity')
 
     args = parser.parse_args()
